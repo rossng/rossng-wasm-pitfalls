@@ -8,7 +8,7 @@
 
 ## Usage
 
-* `deno task example1` - run the example1 script
+* `deno run examples/losing_ownership.ts` - run the loss of ownership example
 
 ## Licence
 

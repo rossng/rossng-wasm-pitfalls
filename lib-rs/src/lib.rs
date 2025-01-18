@@ -1,9 +1,6 @@
-use wasm_bindgen::prelude::*;
+pub mod losing_ownership;
 
-#[wasm_bindgen]
-pub fn greet(name: &str) -> String {
-    format!("Hello, {}!", name)
-}
+use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen(start)]
 pub fn main() {

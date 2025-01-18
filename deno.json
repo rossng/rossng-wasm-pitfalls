@@ -1,6 +1,5 @@
 {
   "tasks": {
-    "example1": "deno run example1.ts",
     "build": "./build.sh"
   },
   "workspace": ["./lib-js"],
