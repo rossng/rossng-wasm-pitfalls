@@ -10,7 +10,7 @@
 
 ### [Accidental loss of ownership](examples/losing_ownership.ts)
 
-Run this example: `deno run examples/losing_ownership.ts`
+Run this example: `deno run examples/losing-ownership.ts`
 
 This example demonstrates how you can create a Rust object in JavaScript, pass it to a Rust function and unwittingly lose ownership of it.
 
@@ -18,7 +18,7 @@ In most cases, the object will be dropped when the Rust function returns, invali
 
 ### [Holding mutable references across an async yield](examples/mut_async.ts)
 
-Run this example: `deno run examples/mut_async.ts`
+Run this example: `deno run examples/mut-async.ts`
 
 This example demonstrates how you can accidentally create a mutable and immutable reference to the same object at the same time.
 
