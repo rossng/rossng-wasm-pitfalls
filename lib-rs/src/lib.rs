@@ -1,4 +1,5 @@
 pub mod losing_ownership;
+pub mod mut_async;
 
 use wasm_bindgen::prelude::*;
 
