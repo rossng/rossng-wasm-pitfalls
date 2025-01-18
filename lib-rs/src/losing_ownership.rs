@@ -10,10 +10,11 @@ impl Foo {
     pub fn new() -> Foo {
         Foo
     }
+}
 
-    pub fn bar(&self) -> String {
-        "bar".to_string()
-    }
+#[wasm_bindgen(js_name = "borrowFoo")]
+pub fn borrow_foo(_foo: &Foo) {
+    console::log_1(&"Rust: borrowed a Foo".into());
 }
 
 #[wasm_bindgen(js_name = "consumeFoo")]
