@@ -25,6 +25,6 @@ pub async fn use_mut_bar(_bar: &mut Bar) -> () {
 }
 
 #[wasm_bindgen(js_name = "useBar")]
-pub async fn use_bar(_bar: &Bar) -> () {
+pub fn use_bar(_bar: &Bar) -> () {
     console::log_1(&"Rust: use_bar".into());
 }
