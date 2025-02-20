@@ -26,6 +26,14 @@ If you write an async Rust function that takes a mutable reference to an object,
 
 Now there is a mutable reference and an immutable reference to the same object at the same time. This is disallowed and the wasm-bindgen runtime throws an exception.
 
+### [Passing arrays to Rust functions](examples/vec-parameter.ts)
+
+Run this example: `deno run examples/vec-parameter.ts`
+
+This example demonstrates how it is difficult to pass arrays into Rust functions without transferring ownership of the objects.
+
+wasm-bindgen can generate bindings for a `Vec<T>` parameter, but not for `Vec<&T>`. As a result, workarounds are needed. 
+
 ## Licence
 
 This project is licensed under the Blue Oak Model License 1.0.0 - see the [LICENSE.md](LICENSE.md) file for details.
